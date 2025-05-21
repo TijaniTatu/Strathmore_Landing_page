@@ -1,92 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Strathmore University</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strathmore University</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <img src="strathmore-logo.png" alt="Strathmore Logo" class="logo">
-        <h1>Strathmore University</h1>
-    </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="strathmore-logo.png" alt="Strathmore Logo" class="logo">
+    </div>
+    <ul class="nav-right">
+        <li><a href="#vision"><i class="fas fa-eye"></i> Vision</a></li>
+        <li><a href="#mission"><i class="fas fa-bullseye"></i> Mission</a></li>
+        <li><a href="#schools"><i class="fas fa-school"></i> Schools</a></li>
+        <li><a href="#projects"><i class="fas fa-lightbulb"></i> Projects</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+      
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+  </nav>
 
-    <section class="vision-mission">
-        <div class="card">
-            <h2><i class="fas fa-eye"></i> Vision</h2>
-            <p>To become a leading outcome-driven entrepreneurial research university by translating our excellence into a major contribution to culture, economic well-being and quality of life.</p>
-        </div>
-        <div class="card">
-            <h2><i class="fas fa-bullseye"></i> Mission</h2>
-            <p>To provide all-round quality education in an atmosphere of freedom and responsibility, excellence in teaching, research and scholarship, ethical and social development, and service to society.</p>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>Strathmore University</h1>
+      <p>A leading not-for-profit private university in Kenya</p>
+      <a href="https://www.strathmore.edu" class="cta-btn" target="_blank">Visit Official Site</a>
+    </div>
+  </header>
 
-    <section class="schools">
-        <h2><i class="fas fa-school"></i> Schools and Programmes</h2>
-        <div class="table-card">
-            <table>
-                <tr>
-                    <th>School</th>
-                    <th>Programmes</th>
-                </tr>
-                <tr>
-                    <td>School of Computing and Engineering Sciences (SCES)</td>
-                    <td>BSc. in Informatics & Computer Science, BSc. in Electrical Engineering</td>
-                </tr>
-                <tr>
-                    <td>Strathmore Law School (SLS)</td>
-                    <td>Bachelor of Laws (LL.B), Diploma in Law</td>
-                </tr>
-                <tr>
-                    <td>School of Business (SoB)</td>
-                    <td>Bachelor of Business Science in Finance, Actuarial Science, and Financial Engineering</td>
-                </tr>
-            </table>
-        </div>
-    </section>
+  <!-- Vision Section -->
+  <section class="section" id="vision" data-aos="fade-up">
+    <h2><i class="fas fa-eye"></i> Our Vision</h2>
+    <p>To become a leading out-come driven entrepreneurial university with international reach.</p>
+  </section>
 
-    <section class="description">
-        <h2><i class="fas fa-university"></i> About Strathmore University</h2>
+  <!-- Mission Section -->
+  <section class="section" id="mission" data-aos="fade-up">
+    <h2><i class="fas fa-bullseye"></i> Our Mission</h2>
+    <p>To provide all-round quality education in an atmosphere of freedom and responsibility, excellence in teaching, research and scholarship, and ethical and social development.</p>
+  </section>
 
-        <div class="card">
-            <h3><i class="fas fa-trophy"></i> Achievements</h3>
-            <ul>
-                <li>Ranked among top private universities in Kenya</li>
-                <li>First ISO-certified university in Kenya</li>
-                <li>Hosts the @iLabAfrica research center for ICT innovation</li>
-            </ul>
-        </div>
+  <!-- Schools Section -->
+  <section class="section" id="schools" data-aos="fade-up">
+    <h2>Schools & Programmes</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>School</th>
+          <th>Programmes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>School of Computing and Engineering</td>
+          <td>BSc. in Informatics and Computer Science, BSc. in Telecommunications</td>
+        </tr>
+        <tr>
+          <td>Strathmore Law School</td>
+          <td>Bachelor of Laws (LL.B), Diploma in Law</td>
+        </tr>
+        <tr>
+          <td>School of Business</td>
+          <td>Bachelor of Commerce, Master of Business Administration</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-        <div class="projects-container">
-            <div class="project-card">
-                <i class="fas fa-robot fa-2x"></i>
-                <h3>AI & Data Science Research</h3>
-                <p>Innovative solutions through machine learning and AI at @iLabAfrica.</p>
-            </div>
-            <div class="project-card">
-                <i class="fas fa-lightbulb fa-2x"></i>
-                <h3>Student Incubation Hub</h3>
-                <p>Entrepreneurial support for student-led startups and ideas.</p>
-            </div>
-            <div class="project-card">
-                <i class="fas fa-chalkboard-teacher fa-2x"></i>
-                <h3>Digital Learning Project</h3>
-                <p>Enhancing virtual learning experiences through EdTech integration.</p>
-            </div>
-        </div>
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <h2 data-aos="fade-up">Ongoing Projects</h2>
+    <div class="projects-container">
+      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <h3><i class="fas fa-robot"></i> AI Research Hub</h3>
+        <p>Driving innovation in artificial intelligence and machine learning across East Africa.</p>
+      </div>
+      <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <h3><i class="fas fa-rocket"></i> Student Entrepreneurship Incubator</h3>
+        <p>Supporting student startups with mentorship and funding opportunities.</p>
+      </div>
+      <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+        <h3><i class="fas fa-leaf"></i> Sustainable Energy Campus Plan</h3>
+        <p>Implementing green energy solutions and sustainability research on campus.</p>
+      </div>
+    </div>
+  </section>
 
-        <div class="card">
-            <h3><i class="fas fa-map-marker-alt"></i> Contact Address</h3>
-            <p>Strathmore University, Ole Sangale Road, Madaraka Estate, Nairobi, Kenya</p>
-            <p>Email: info@strathmore.edu | Phone: +254 703 034000</p>
-        </div>
-    </section>
+  <!-- Contact Section -->
+  <section class="section" id="contact" data-aos="fade-up">
+    <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+    <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Ole Sangale Road, Madaraka Estate, Nairobi, Kenya</p>
+    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> info@strathmore.edu</p>
+    <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +254 (0) 703 034000</p>
+    
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Strathmore University. All Rights Reserved.</p>
-    </footer>
+  <!-- AOS + Dark Mode Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
 </body>
 </html>
